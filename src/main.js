@@ -1,14 +1,10 @@
 import generateSquad from './squad-generator.js'
 import getName from './name-generator.js'
 
-const SQUADIES = 1000
-
-
-
-document.querySelector('form button').onclick = function (e) {
+document.querySelector('button').onclick = function (e) {
     let teamParameters = {}
     e.preventDefault()
-    const $inputs = document.querySelectorAll('form input')
+    const $inputs = document.querySelectorAll('input')
     for (let i = 0; i < $inputs.length; i++) {
         switch ($inputs[i].id) {
             case $inputs[i].id = 'team-name':
@@ -53,6 +49,11 @@ function generateTeam(teamParameters) {
     document.querySelector('.message').innerHTML = JSON.stringify(myTeam)
     console.log(myTeam)
 }
+
+
+
+
+
 
 /*
 propuesta de expansion

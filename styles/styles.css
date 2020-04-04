@@ -23,11 +23,11 @@ body {
 
 body h1 {
   font-family: "Gochi_Hand";
-  font-size: 22px;
+  font-size: 40px;
   margin: 10px;
 }
 
-body form {
+body div {
   font-family: "Cairo";
   color: white;
   font-size: 13px;
@@ -50,13 +50,13 @@ body form {
   border-radius: 15px;
 }
 
-body form label {
+body div label {
   -ms-flex-item-align: start;
       align-self: flex-start;
   margin: 0px 5px;
 }
 
-body form input {
+body div input {
   font-family: "Cairo";
   color: white;
   font-size: 13px;
@@ -73,12 +73,12 @@ body form input {
   pointer-events: unset;
 }
 
-body form input:focus {
+body div input:focus {
   background-color: #b37524;
   border: white;
 }
 
-body form button {
+body div button {
   font-family: "Cairo";
   color: white;
   font-size: 13px;
@@ -94,9 +94,14 @@ body form button {
   transition: 0.3s;
 }
 
-body form button:hover {
+body div button:hover {
   background-color: #b37524;
   color: black;
   cursor: pointer;
+}
+
+body .message {
+  width: 80%;
+  margin-top: 70px;
 }
 /*# sourceMappingURL=styles.css.map */

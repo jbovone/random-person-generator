@@ -1,0 +1,81 @@
+@font-face {
+    font-family: "Gochi_Hand";
+    src: url("../fonts/Gochi_Hand/GochiHand-Regular.ttf");
+}
+@font-face {
+    font-family: "Cairo";
+    src: url("../fonts/Cairo/Cairo-Regular.ttf");
+}
+$textPrimary: rgb(179, 117, 36);
+$colorPrimary: white;
+$colorPrimaryInverse: black;
+@mixin textDefault {
+    font-family: "Cairo";
+    color: $colorPrimary;
+    font-size: 13px;
+    font-weight: 300;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Cairo";
+    color: $textPrimary;
+    background-color: black;
+    h1 {
+        font-family: "Gochi_Hand";
+        font-size: 22px;
+        margin: 10px;
+    }
+    form {
+        @include textDefault();
+        background-color: rgb(86, 33, 155);
+        margin: 15px auto;
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: solid 1px $textPrimary;
+        padding: 20px;
+        border-radius: 15px;
+        label {
+            align-self: flex-start;
+            margin: 0px 5px;
+        }
+        input {
+            @include textDefault();
+            font-size: 12px;
+            padding: 3px;
+            border: 1px solid $textPrimary;
+            background: black;
+            width: 90%;
+            margin: 5px 0px;
+            border-radius: 5px;
+            transition: 0.3s;
+            pointer-events: unset;
+            &:focus {
+                background-color: $textPrimary;
+                border: $colorPrimary;
+            }
+        }
+        button {
+            @include textDefault();
+            width: 99%;
+            margin-top: 30px;
+            padding: 5px;
+            border-radius: 5px;
+            background-color: $colorPrimaryInverse;
+            border: 1px solid $textPrimary;
+            outline: none;
+            transition: 0.3s;
+            &:hover {
+                background-color: $textPrimary;
+                color: $colorPrimaryInverse;
+                cursor: pointer;
+            }
+        }
+    }
+}

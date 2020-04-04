@@ -1,0 +1,102 @@
+@font-face {
+  font-family: "Gochi_Hand";
+  src: url("../fonts/Gochi_Hand/GochiHand-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Cairo";
+  src: url("../fonts/Cairo/Cairo-Regular.ttf");
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Cairo";
+  color: #b37524;
+  background-color: black;
+}
+
+body h1 {
+  font-family: "Gochi_Hand";
+  font-size: 22px;
+  margin: 10px;
+}
+
+body form {
+  font-family: "Cairo";
+  color: white;
+  font-size: 13px;
+  font-weight: 300;
+  background-color: #56219b;
+  margin: 15px auto;
+  width: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: solid 1px #b37524;
+  padding: 20px;
+  border-radius: 15px;
+}
+
+body form label {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  margin: 0px 5px;
+}
+
+body form input {
+  font-family: "Cairo";
+  color: white;
+  font-size: 13px;
+  font-weight: 300;
+  font-size: 12px;
+  padding: 3px;
+  border: 1px solid #b37524;
+  background: black;
+  width: 90%;
+  margin: 5px 0px;
+  border-radius: 5px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  pointer-events: unset;
+}
+
+body form input:focus {
+  background-color: #b37524;
+  border: white;
+}
+
+body form button {
+  font-family: "Cairo";
+  color: white;
+  font-size: 13px;
+  font-weight: 300;
+  width: 99%;
+  margin-top: 30px;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: black;
+  border: 1px solid #b37524;
+  outline: none;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+body form button:hover {
+  background-color: #b37524;
+  color: black;
+  cursor: pointer;
+}
+/*# sourceMappingURL=styles.css.map */

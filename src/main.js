@@ -46,8 +46,7 @@ function generateTeam(teamParameters) {
         count: teamParameters.squaddiesNumber,
         squaddies: generateSquad(Number(teamParameters.squaddiesNumber), getName, teamParameters.budgetMoney)
     }
-    //document.querySelector('.message').innerHTML = JSON.stringify(myTeam)
-    console.log(myTeam)
+    document.querySelector('.message').innerHTML = JSON.stringify(myTeam)
 }
 
 

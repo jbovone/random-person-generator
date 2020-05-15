@@ -1,0 +1,19 @@
+{
+  "name": "gran-dt-random-generator",
+  "version": "1.0.0",
+  "description": "genrador de jugadores random en formato json",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jbovone/gran-dt-random-generator.git"
+  },
+  "author": "jbovone",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jbovone/gran-dt-random-generator/issues"
+  },
+  "homepage": "https://github.com/jbovone/gran-dt-random-generator#readme"
+}

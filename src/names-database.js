@@ -215,8 +215,8 @@ Zen
 
 const namesDataBase = {
     japanese: {
-        names: [japaneseNames.match(/([A-Z])([a-z]+)/g)],
-        surnames: [japaneseSurnames.match(/([A-Z])([a-z]+)/g)]
+        names: japaneseNames.match(/([A-Z])([a-z]+)/g),
+        surnames: japaneseSurnames.match(/([A-Z])([a-z]+)/g)
     }
 }
-export default namesDataBase
+module.exports = namesDataBase

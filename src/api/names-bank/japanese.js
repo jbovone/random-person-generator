@@ -210,13 +210,4 @@ Yukio
 Yutaka
 Zen
 `
-//https://www.familyeducation.com/baby-names/browse-origin/first-name/japanese?page=2
-//https://japantoday.com/category/features/lifestyle/the-10-most-common-surnames-in-japan-and-their-meanings
-
-const namesDataBase = {
-    japanese: {
-        names: japaneseNames.match(/([A-Z])([a-z]+)/g),
-        surnames: japaneseSurnames.match(/([A-Z])([a-z]+)/g)
-    }
-}
-module.exports = namesDataBase
+export default {japaneseNames, japaneseSurnames}

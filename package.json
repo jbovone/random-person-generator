@@ -8,12 +8,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jbovone/gran-dt-random-generator.git"
+    "url": "git+https://github.com/jbovone/random-person-generator.git"
   },
   "author": "jbovone",
-  "license": "ISC",
+  "license": "GNU",
   "bugs": {
-    "url": "https://github.com/jbovone/gran-dt-random-generator/issues"
+    "url": "https://github.com/jbovone/random-person-generator/issues"
   },
-  "homepage": "https://github.com/jbovone/gran-dt-random-generator#readme"
+  "homepage": "https://github.com/jbovone/random-person-generator#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
 }
